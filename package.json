@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-  "test": "jest",
+  "test": "node app.test.js",
   "build": "echo Build completed successfully"
-  },
+},
   "keywords": [],
   "author": "",
   "license": "ISC",

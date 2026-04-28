@@ -1,5 +1,9 @@
 const add = require("./app");
 
-test("adds 5 + 3 to equal 8", () => {
-  expect(add(5, 3)).toBe(8);
-});
+if (add(5, 3) === 8) {
+  console.log("Test Passed");
+  process.exit(0);
+} else {
+  console.log("Test Failed");
+  process.exit(1);
+}
