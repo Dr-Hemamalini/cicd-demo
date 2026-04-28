@@ -5,7 +5,8 @@ pipeline {
         stage('Checkout Code') {
             steps {
                 git branch: 'main',
-                    url: 'https://github.com/USERNAME/jenkins-cicd-demo.git'
+                    url: 'https://github.com/Dr-Hemamalini/cicd-demo.git'
+                    credentialsId: 'github-token'
             }
         }
 
