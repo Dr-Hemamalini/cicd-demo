@@ -4,9 +4,14 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main',
-                    url: 'https://github.com/Dr-Hemamalini/cicd-demo.git'
-                    credentialsId: 'github-token'
+                checkout([
+                    $class: 'GitSCM',
+                    branches: [[name: '*/main']],
+                    userRemoteConfigs: [[
+                        url: 'https://github.com/Dr-Hemamalini/cicd-demo.git',
+                        credentialsId: 'github-token'
+                    ]]
+                ])
             }
         }
 
