@@ -1,4 +1,10 @@
-"scripts": {
-  "test": "node app.test.js",
-  "build": "echo Build completed successfully"
+{
+  "name": "cicd-demo",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "node app.test.js",
+    "build": "echo Build completed successfully",
+    "start": "node app.js"
+  }
 }
